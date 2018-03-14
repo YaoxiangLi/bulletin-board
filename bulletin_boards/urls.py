@@ -22,4 +22,5 @@ urlpatterns = [
     path('', include('boards.urls')),
     path('admin/', admin.site.urls),
     path('boards/<int:pk>/', views.board_topics, name='board_topics'),
+    path('boards/<int:pk>/new', views.new_topic, name='new_topic'),
 ]
